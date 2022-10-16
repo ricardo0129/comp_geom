@@ -23,7 +23,7 @@ abstract public class GeometricObject{
   public void setBoundaryColor(Color boundaryColor){
     this.boundaryColor = boundaryColor;
   }
-  public void setInteriorColor(){
+  public void setInteriorColor(Color interiorColor){
     this.interiorColor = interiorColor;
   }
   @Override

@@ -44,7 +44,6 @@ public class Point extends GeometricObject{
   }
 	public void draw(Graphics g) {
 		int radius = 5;
-
 		g.setColor(getInteriorColor());
 		g.fillOval((int)x - radius, (int)y - radius, 2 * radius, 2 * radius);
 		g.setColor(getBoundaryColor());

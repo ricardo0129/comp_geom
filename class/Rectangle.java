@@ -52,6 +52,12 @@ public class Rectangle extends GeometricObject{
   public double smallestY(){
     return Math.min(begin.getY(),end.getY());
   }
+  public boolean isPointInRectangle(Point p){
+    double x = p.getX();
+    double y = p.getY();
+    return smallestX()<=x && x<=greatestX() &&
+        smallestY()<=y && y<=greatestY();
+  }
   @Override
   public String toString(){
     String str = "RECTANGLE "+super.toString()+"\n";
